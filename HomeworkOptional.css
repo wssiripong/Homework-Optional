@@ -1,0 +1,383 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar > div {
+  flex: 1;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-section > div {
+  padding: 10px;
+}
+
+.middle-section > div:hover,
+.right-section > div:hover,
+.logo:hover {
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section > div {
+  padding: 10px;
+}
+
+.search-icon img {
+  width: 22px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon img {
+  width: 35px;
+}
+
+.cart-item {
+  background-color: red;
+  position: absolute;
+  padding: 0px 4px;
+  border-radius: 10px;
+  font-size: 12px;
+  top: 12px;
+  right: 12px;
+  color: white;
+}
+
+.main {
+  padding-top: 7vh;
+  font-size: 40px;
+  background-color: rgb(250,250,250);
+}
+
+.my-cart-container {
+  display: flex;
+  align-items: end;
+  width: 80vw;
+  height: 15vh;
+  margin: 0 auto 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.items-order-info {
+  display: flex;
+  width: 80vw;
+  height: 76.8vh;
+  margin: auto;
+}
+
+.items-order-info > div {
+  flex: 1 0 450px;
+}
+
+.item-container {
+  background-color: white;
+  margin-bottom: 20px;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.trash-img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trash-img-container:hover {
+  cursor: pointer;
+}
+
+.fa-trash {
+  font-size: 15px;
+  color: rgb(180,180,180);
+  border: 2px solid rgb(180,180,180);
+  padding: 8px 10px;
+  border-radius: 25px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-box {
+  background-color: lightskyblue;
+  height: 180px;
+  width: 180px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.item-box2 {
+  background-color: orange;
+  height: 180px;
+  width: 180px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.item-box > i {
+  font-size:15px;
+  color:lightblue;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.item-box2 > i {
+  font-size:15px;
+  color:orange;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.item-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+}
+
+.item-description {
+  font-size: 16px;
+  color: white;
+}
+
+.item-info {
+ flex: 4;
+}
+
+.item-info-box {
+  background-color: white;
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  padding: 20px;
+}
+
+.item-info-name {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+  margin-top:10px;
+  margin-bottom: 15px;
+}
+
+.level-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.level-circles1,
+.level-circles2 {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.level-circles1 > div:first-child {
+  background-color:rgb(90,90,90);
+}
+
+.level-circles1 > div {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(185, 182, 182);
+  margin-right: 5px;
+  border-radius: 8px;
+}
+
+.level-circles2 > div:nth-child(4) {
+  background-color:rgb(185, 182, 182);
+}
+
+.level-circles2 > div {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(90, 90, 90);
+  margin-right: 5px;
+  border-radius: 8px;
+}
+
+.level-option {
+  display: flex;
+}
+
+.level-option select {
+  border-radius: 5px;
+  color: rgb(100,100,100);
+  font-weight: bold;
+}
+
+.level-option select:hover {
+  cursor: pointer;
+}
+
+.price {
+  font-size: 18px;
+  color: rgb(90, 90, 90);
+}
+
+.order-info {
+  padding-left: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.order-info-card {
+  flex: 1 0 215px;
+  border: 1px solid rgb(230,230,230);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.order-info-title {
+  font-size: 23px;
+  font-weight: bold;
+  color:rgb(90, 90, 90);
+  margin-bottom: 25px;
+}
+
+.subtotal-section {
+  display: flex;
+  font-size: 18px;
+  color: grey;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.promotion-code-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promotion-code-section > div {
+  display: flex;
+  align-items: center;
+}
+
+.ticket-container {
+  justify-content: flex-start;
+  padding-right: 20px;
+}
+
+.ticket-container > i {
+  font-size: 18px;
+  color: grey;
+}
+
+.promotion-code-input {
+  flex: 1 1;
+  padding-right: 10px;
+}
+
+.promotion-code-input > input {
+  width: 100%;
+  border: 1px solid rgb(230,230,230);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.apply-button-container {
+  flex: 0 0 100px;
+}
+
+.apply-button-container > button {
+  width:100%;
+  height: 37px;
+  background-color: white;
+  border: 2px solid rgb(200,200,200);
+  color:rgb(180, 180, 180);
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.apply-button-container > button:hover {
+  cursor: pointer;
+}
+
+.order-info-underline {
+  width: 100%;
+  border-bottom: 1px solid rgb(230,230,230);
+  margin: 20px 0;
+}
+
+.total-payment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.total-payment {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(100,100,100)
+}
+
+.total-payment-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(140, 140, 140);
+}
+
+.check-out-button {
+  width:100%;
+  height: 38px;
+  background-color: rgb(180,180,180);
+  border: none;
+  border-radius: 10px;
+  color: rgb(50,50,50);
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.check-out-button:hover {
+  cursor: pointer;
+}
